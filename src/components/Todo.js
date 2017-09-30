@@ -1,8 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Todo = ({ text }) => (
+const Todo = ({ text, completed, onClickHandler }) => (
   <li>
+    <input
+      type="checkbox"
+      checked={completed}
+      onClick={onClickHandler}
+    />
     {text}
   </li>
 );

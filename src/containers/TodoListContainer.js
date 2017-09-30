@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { completeTodo } from '../actions';
 import TodoList from '../components/TodoList';
 
 const mapStateToProps = state => {
@@ -9,6 +10,9 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
+    onTodoClick: todo => {
+      dispatch(completeTodo(todo))
+    }
   };
 };
 
