@@ -1,9 +1,11 @@
-import { RECIEVE_TODOS } from '../actions';
+import { RECEIVE_TODOS, ADD_TODO } from '../actions';
 
 const todos = (state = [], action) => {
   switch(action.type) {
-    case RECIEVE_TODOS:
+    case RECEIVE_TODOS:
       return action.todos;
+    case ADD_TODO:
+      return state.concat([action.todo]);
     default:
       return state;
   }
