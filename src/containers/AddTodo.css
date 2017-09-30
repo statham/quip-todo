@@ -1,0 +1,25 @@
+.AddTodo {
+  background-color: white;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.todoInput {
+  width: 100%;
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid #E1E1E1;
+  height: 20px;
+}
+
+.submitBtn {
+  background-color: #57AFE2;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  position: absolute;
+  right: -25px;
+  top: 10px;
+  padding: 10px;
+}

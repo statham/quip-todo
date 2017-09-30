@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addTodo } from '../actions';
+import './AddTodo.css';
 
 let AddTodo = ({ dispatch }) => {
   let input
 
   return (
-    <div>
+    <div className='AddTodo'>
       <form
         onSubmit={e => {
           e.preventDefault();
@@ -19,11 +20,14 @@ let AddTodo = ({ dispatch }) => {
       >
         <input
           ref={node => { input = node }}
+          className='todoInput'
+          placeholder='Add a to do...'
         />
         <button
-          type="submit"
+          type='submit'
+          className='submitBtn'
         >
-          Add Todo
+          Add To Do
         </button>
       </form>
     </div>
